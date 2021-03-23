@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="277dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:gravity="center"
+        android:text="QUẢN LÝ CHI TIÊU"
+        android:background="@drawable/border_main"
+        android:textColor="#ED2762"
+        android:textColorHighlight="#2196F3"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtnThongKe"
+        android:layout_width="98dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="54dp"
+        android:backgroundTint="#0000FFEA"
+        android:scaleType="fitCenter"
+        android:src="@drawable/thongke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/imgBtnThuChi"
+        android:layout_width="98dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="54dp"
+        android:backgroundTint="#0000FFEA"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chitieu"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnThongKe"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="129dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:gravity="center"
+        android:text="Thống Kê"
+        android:textColor="#D6F623"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnThongKe" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="98dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:gravity="center"
+        android:text="Chi Tiêu"
+        android:textColor="#D6F623"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnThuChi" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="96dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:gravity="center"
+        android:text="Chi Tiết"
+        android:textColor="#D6F623"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnChiTiet" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="96dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="Cài đặt"
+        android:textColor="#D6F623"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnCaiDat" />
+
+    <ImageButton
+        android:id="@+id/imgBtnChiTiet"
+        android:layout_width="98dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="86dp"
+        android:backgroundTint="#0000FFEA"
+        android:scaleType="fitCenter"
+        android:src="@drawable/chitiet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/imgBtnCaiDat"
+        android:layout_width="98dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#0000FFEA"
+        android:scaleType="fitCenter"
+        android:src="@drawable/caidat"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnChiTiet"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
